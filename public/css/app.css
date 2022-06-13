@@ -20503,3 +20503,24 @@ readers do not read off random characters that represent icons */
 .fa-zhihu:before {
   content: "\F63F";
 }
+
+body {
+  background-color: azure;
+}
+
+.card {
+  padding: 30px;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 250px;
+}
+.card a {
+  text-decoration: none;
+}
+.card a li {
+  list-style-type: none;
+  color: black;
+}
+.card a li h5, .card a li .h5 {
+  display: inline-block;
+  color: #7e0606;
+}

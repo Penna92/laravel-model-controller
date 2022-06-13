@@ -10,15 +10,33 @@
 </head>
 
 <body>
-    @dump($movies);
-    <h1 class="text-center">Ciao<i class="fa-solid fa-anchor-lock"></i></h1>
-    <ul>
+    {{-- @dump($movies); --}}
+    <h1 class="text-center my-5"><i class="fa-solid fa-video"></i> MOVIES <i class="fa-solid fa-clapperboard"></i></h1>
+    <div class="row gap-5 justify-content-center">
         @foreach ($movies as $movie)
 
-        <li><a href="route('detail',$movie->id)">{{$movie->title}}</a></li>
+        <div class="card col-lg-4 justify-content-center mx-5">
+            <a href="" class="d-flex flex-column gap-3">
+                <li>
+                    <h5>Titolo:</h5> {{$movie->title}}
+                </li>
+                <li>
+                    <h5>Titolo originale:</h5> {{$movie->original_title}}
+                </li>
+                <li>
+                    <h5>Lingua:</h5> {{$movie->nationality}}
+                </li>
+                <li>
+                    <h5>Data:</h5> {{$movie->date}}
+                </li>
+                <li>
+                    <h5>Voto:</h5> {{$movie->vote}}
+                </li>
+            </a>
+        </div>
 
         @endforeach
-    </ul>
+    </div>
 </body>
 
 </html>
