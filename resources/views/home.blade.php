@@ -15,7 +15,7 @@
     <div class="row gap-5 justify-content-center">
         @foreach ($movies as $movie)
         <div class="card col-lg-4 justify-content-center mx-5">
-            <a href="detail?id={{$movie->id}}" class="d-flex flex-column gap-3">
+            <a href="detail{{$movie->id}}" class="d-flex flex-column gap-3">
                 <li>
                     <h5>Titolo:</h5> {{$movie->title}}
                 </li>

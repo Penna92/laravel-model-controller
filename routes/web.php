@@ -15,4 +15,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PageController@index');
 
-Route::get('/detail', 'PageController@gago');
+Route::get('/detail{id}', 'PageController@findIndex');

@@ -1,5 +1,5 @@
 <?php
-    $parametro = $_GET["id"];
+    // $parametro = $_GET["id"];
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +16,8 @@
     <h1>
 
     </h1>
-    <h1>DETAIL PAGE FILM: {{$movies[$parametro]->title}}</h1>
+    {{-- <h1>DETAIL PAGE FILM: {{$movies[$parametro]->title}}</h1> --}}
+    <h1>DETAIL PAGE FILM: {{$movies->title}}</h1>
 </body>
 
 </html>

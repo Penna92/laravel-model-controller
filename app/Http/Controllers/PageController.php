@@ -13,9 +13,9 @@ class PageController extends Controller
         // @dd($movies);
         return view('home', compact('movies'));
     }
-    public function gago()
+    public function findIndex($id)
     {
-        $movies = Movie::all();
+        $movies = Movie::find($id);
         // @dd($movies);
         return view('detail', compact('movies'));
     }
