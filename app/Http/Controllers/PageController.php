@@ -13,7 +13,7 @@ class PageController extends Controller
         // @dd($movies);
         return view('home', compact('movies'));
     }
-    public function findIndex($id)
+    public function findMovieById($id)
     {
         $movies = Movie::find($id);
         // @dd($movies);
