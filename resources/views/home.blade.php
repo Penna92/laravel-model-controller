@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
-    <title>Document</title>
+    <title>Movies</title>
 </head>
 
 <body>
@@ -14,9 +14,8 @@
     <h1 class="text-center my-5"><i class="fa-solid fa-video"></i> MOVIES <i class="fa-solid fa-clapperboard"></i></h1>
     <div class="row gap-5 justify-content-center">
         @foreach ($movies as $movie)
-
         <div class="card col-lg-4 justify-content-center mx-5">
-            <a href="" class="d-flex flex-column gap-3">
+            <a href="detail?id={{$movie->id}}" class="d-flex flex-column gap-3">
                 <li>
                     <h5>Titolo:</h5> {{$movie->title}}
                 </li>
@@ -34,7 +33,6 @@
                 </li>
             </a>
         </div>
-
         @endforeach
     </div>
 </body>
